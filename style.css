@@ -1,0 +1,946 @@
+r
+/* Temel CSS stilleri */
+
+*{
+    
+    box-sizing: border-box;
+    font-family: sans-serif;
+    flex-wrap: wrap;
+    
+}
+
+
+body {
+    background-color: white;
+    margin:0;
+    padding:0;
+}
+
+.head-top {
+    background-color: #2b3947;
+    height:  40px;
+    display: flex;
+    justify-content: right;
+    
+}
+
+.head-top div ul {
+    list-style-type: none;
+    display: flex;
+    
+}
+
+.head-top div ul li {
+    display: inline-block;
+    
+    
+}
+
+.head-top div ul li a {
+    color: #c3cbd7;
+    padding: 5px;
+    text-decoration: none;
+    display: inline-block;
+    font-family: musosans-300;
+    font-size: 11px;
+    
+}
+
+.head-top div ul li a:hover {
+    background-color: #2b3947;
+    color: #74b49f; 
+    
+}
+
+.head-top div ul li:not(:last-child)::after {
+    content: "┊"; /* Ayırıcı olarak dikey çizgi kullanılıyor */
+    color: #c3cbd7; /* Ayırıcının rengi */
+    padding: 0 1px; /* Ayırıcının sol ve sağında biraz boşluk */
+    
+}
+
+
+
+
+/* Üst menü stilleri */
+.topnav {
+    overflow: hidden;
+    background-color:#232b38;
+   
+    
+}
+
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    flex-wrap: inherit;
+    justify-content: space-between;
+    padding:  15px ;
+    box-sizing: border-box;
+    height: 60px;
+    line-height: 30px;
+    position: relative;
+    text-decoration: none;
+    font-family: musosans-900;
+    font-weight : 700;
+    height: 100%;
+    font-size: 13px;
+
+}
+
+
+
+
+
+.topnav a:hover {
+    background-color: #232b38;
+    color: rgb(255, 255, 255);
+    border-bottom: 3px solid #e81932; /* Alt çizgi rengi */
+    
+   
+}
+
+
+.THY-LOGO {
+    height: 40px; /* Logo yüksekliği */
+    padding-top: 10px;
+    width: 218px;
+    margin-right: 20px; /* Logonun sağında boşluk bırakmak için */
+    float: left; /* Logo'nun sol tarafa yerleşmesi */
+}
+
+
+
+#container {
+    background-image: url(web/image/Istanbul.png);
+    position: relative;
+    height: 420px; 
+    display: flex;
+    background-size: cover;
+    background-position: center;
+   
+   
+}
+
+#container .content 
+{  
+    
+    color: #ffffff;
+    font-family:"Open Sans", sans-serif;
+    line-height: 0.5;
+    margin-top: 100px;
+    padding-left: 250px;
+    
+    
+}
+
+#container .content h1
+{
+    font-size: 28px;
+   
+
+}
+
+#container .content h2
+{
+    font-size: 35px;
+    
+}
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.button-container {
+  position: absolute;
+  top: 75%;
+  right: 33.85%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  line-height: 1.6;
+  font-size: 14px;
+  
+}
+
+.button {
+  color: #647281;
+  background-color: #f4f5f8;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.Panel{
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    padding: 30px 26px 20px;
+    display: block;
+    box-shadow: 0 6px 6px #0000001f;
+    transform: translate(-52%, -50%);
+    width: 950px; /* İstediğiniz boyutu ayarlayın */
+    height: 150px; /* İstediğiniz boyutu ayarlayın */
+    background-color: white;
+    border-radius: 0 3px 3px;
+    
+
+}
+
+.flight-search-button {
+    background-color: #e81932; /* Buton arka plan rengi */
+    color: white; /* Buton metin rengi */
+    border: none;
+    padding: 0 10px; /* Buton iç boşluğu */
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    display: block;
+    height: 66px;
+    width: 150px;
+    opacity: 1;
+}
+
+
+
+.textbox-container {
+   
+    top: 50px;
+    border-radius: 3px;
+    box-shadow: none;
+    height: 66px; /* Yüksekliğin otomatik ayarlanması */
+    position: relative; /* Göreceli konumlandırma */
+    margin-bottom: 0px; /* Alt kısmında boşluk bırakılması */
+    display: flex; 
+}
+
+.textbox-container input {
+    padding: 0px 5px; /* Boxların padding'i */
+    margin-right: 10px; /* Kutular arası boşluk */
+    background-color: #f4f6f8; /* Kutu iç rengi */
+    border:#f4f6f8 ;
+}
+
+.button-container1 {
+    position: relative;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    justify-content: space-between;
+    margin-left: 220px;
+    line-height: 1.6;
+    
+  }
+
+  .button1 {
+    background-color: white; /* Buton arka plan rengi */
+    color: #232b38; /* Buton metin rengi */
+    font-weight: 700;
+    border: none;
+    padding: 5px 5px 5px 24px ;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 120px;
+    font-size: 14px;
+}
+
+
+.spacer {
+    width: 0.1px;
+    margin: 0 2px;
+    display: inline-block;
+}
+
+
+.button1 img {
+    position: relative;
+    display: flex;
+    width: 18px;
+    height: 18px;
+    border: 2px solid #00548a;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: absolute;
+    box-shadow: none;
+    margin: -17px -20px 0;
+    box-sizing: border-box;
+    
+}
+
+
+.text1 {
+    position: absolute;
+    top: -65px; /* Search flights butonundan 40px yukarıda */
+    left: 75%;
+    transform: translateX(-50%);
+    scale: 80%;
+}
+
+.text2 {
+    position: absolute;
+    top: 80px; /* Search flights butonundan 40px yukarıda */
+    left: 85%;
+    transform: translateX(-50%);
+    scale: 80%;
+}
+
+
+.rectangle-container {
+    position: fixed; /* Dikdörtgenlerin sabit konumlandırılmasını sağlar */
+    bottom: -115px;
+    left: 0; /* Dikdörtgenlerin sol kenarına konumlandırır */
+    width: 100%; /* Sayfa genişliği kadar uzanır */
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+.rectangle {
+    width: calc((100% - 4rem) / 3); /* Dikdörtgenlerin genişliği */
+    padding: 23px 10px 5px;
+    height: 92px; /* Dikdörtgenlerin yüksekliği */
+    background-color: #ffffff; /* Dikdörtgenlerin arka plan rengi */
+    border: 0px solid #ffffff;  /*Kenarlık eklemek için */
+    border-left: 0px solid #dae0e8;
+    border-right: 1px solid #dae0e8;
+    box-shadow: 3px 2px 2px #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.circle  {
+    width: 48px; /* Yuvarlakların genişliği */
+    height: 48px; /* Yuvarlakların yüksekliği */
+    top: -10px;
+    background-color: #dae0e8; /* Yuvarlakların arka plan rengi */
+    border-radius: 50%; /* Yuvarlakların kenarları yuvarlatılmış */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+   
+}
+
+.circle img {
+    width: 20px; /* İkon boyutu */
+    height: 20px;
+}
+
+.circle span {
+    position: absolute; /* Konumu absolute olarak ayarla */
+    text-align: center; /* Metni yatayda ortala */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 12px;
+    color: #232b38;
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: -50px;
+    margin-right: -29.9px; 
+    margin-left: -22px;
+}
+
+.circle:hover span {
+     
+    color: #ff0000; /* Butonun üstüne gelince metin rengini kırmızı yap */
+}
+
+
+
+.recwrite {
+    width: 985px; /* Dikdörtgenin genişliği */
+    height: 80px;
+    padding: 15px 15px 35px; /* İçerikten kenarlara uzaklık */
+    background-color: #ffffff; /* Dikdörtgenin arka plan rengi */
+    border-radius: 5px; /* Dikdörtgenin kenarları yuvarlatılmış */
+    border: 1px dashed #2e8ffd!important;
+    margin-top: 120px;
+    margin-left: -40px;
+   
+   
+   
+}
+
+.recwrite .text  {
+    font-size: 14px;
+    font-weight: 500;
+    color: #212529;
+    line-height: 1.5;
+    font-family:  MuseoSans-300;
+    margin-left: 42px;
+}
+
+
+
+.recwrite .text .greeting {
+    display: block; /* Blok düzende görüntülenmesini sağlar */
+    margin-bottom: 10px; /* Diğer yazıdan biraz boşluk bırakır */
+    font-family: MuseoSans-300;
+    font-weight: bold; 
+    margin-left: -2px;
+    margin-top: -25px;
+}
+
+ .levha img
+{
+    width: 20px; /* İkon genişliği */
+    height: 20px; /* İkon yüksekliği */
+    margin-left: -35px; /* İkon ile metin arasındaki boşluk */
+   
+   
+}
+
+.ticket {
+    position: absolute;
+    bottom: 0;
+    left: -15px;;
+    margin-bottom: -660px; /* Bileti biraz daha aşağı kaydır */
+}
+
+.ticket img {
+    width: 500px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 15px;
+    vertical-align: middle;
+    aspect-ratio: auto 500 / 250;
+    
+}
+
+.ticket-text {
+    font-size: 14px;
+    color: #212529;
+    position: absolute; /* Metni mutlak konumlandırma */
+    top: -50px; /* Metni yukarı taşı */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+   
+}
+
+.wallet-info {
+    width: 100%; /* Genişlik tümüyle alansın */
+    position: relative; /* İçeriklerin konumlandırılması için */
+}
+
+.text-below-image {
+    position: absolute; /* Resmin altına yerleştirme */
+    bottom: 0; /* En alta hizalama */
+    display: inline-block; /* Resmin genişliği kadar yer kaplaması */
+    width: 100%; /* Genişlik tümüyle alansın */
+}
+
+.text-below-image p {
+    font-size: 14px;
+    font-family:MuseoSans-500;
+    color: #212529;
+    margin-top: 20px; /* Metnin üstüne biraz boşluk bırakır */
+    line-height: 1.2; /* Metnin satır yüksekliğini ayarlar */
+    margin-bottom: -200px;
+}
+
+.bridge {
+    position: absolute;
+    bottom: 0;
+    right: 0; /* Bridge'yi sağ alt köşeye konumlandırmak için */
+    margin-bottom: -660px; /* Bileti biraz daha aşağı kaydır */
+}
+
+.bridge img {
+    width: 500px;
+    height: auto;
+    margin-right: -5px;
+    border-radius: 15px;
+    vertical-align: middle;
+    aspect-ratio: auto 500 / 250;
+    
+}
+
+.bridge-text {
+    font-size: 14px;
+    color: #212529;
+    position: absolute; /* Metni mutlak konumlandırma */
+    top: -50px; /* Metni yukarı taşı */
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+}
+
+.bridge-info {
+    width: 100%; /* Genişlik tümüyle alansın */
+    position: relative; /* İçeriklerin konumlandırılması için */
+}
+
+.text-below-bridge-image {
+    position: absolute; /* Resmin altına yerleştirme */
+    bottom: 0; /* En alta hizalama */
+    display: inline-block; /* Resmin genişliği kadar yer kaplaması */
+    width: 100%; /* Genişlik tümüyle alansın */
+}
+
+.text-below-bridge-image p {
+    font-size: 14px;
+    font-family:MuseoSans-300;
+    color: #212529;
+    margin-top: 20px; /* Metnin üstüne biraz boşluk bırakır */
+    margin-bottom: -220px;
+    line-height: 1.2; /* Metnin satır yüksekliğini ayarlar */
+}
+
+.discover-button , .discover-button2 {
+    background-color: #e81932;
+    color: white;
+    border: 1px solid #e81932;
+    border-radius: .25rem;
+    padding: 6px 12px;
+    font-weight: 700;
+    font-size: 13px;
+    cursor: pointer;
+    margin-top: 10px; /* Boşluk eklemek */
+    opacity: 1;
+    
+}
+
+.discover-button {
+    position: absolute; /* Mutlak konumlandırma */
+    bottom: -180px; /* Sayfanın altından 20px yukarıda */
+    left: -525px; /* Sayfanın yatay ortasında */
+    
+}
+
+.discover-button2{
+    position: absolute; /* Mutlak konumlandırma */
+    bottom: -160px; /* Sayfanın altından 20px yukarıda */
+    left: 0%; /* Sayfanın yatay ortasında */
+}
+
+
+
+.Lisbon img {
+    width: 499px; /* Genişliği 200px olarak ayarla */
+    height: 231px; /* Genişlik oranına göre yüksekliği otomatik ayarla */
+    
+}
+
+/* Port Louis resmi */
+.Louis img {
+    width: 245px; /* Genişliği 200px olarak ayarla */
+    height: 231px; /* Genişlik oranına göre yüksekliği otomatik ayarla */
+    
+}
+
+/* Sarajevo resmi */
+.Sarajevo img {
+    width: 235px; /* Genişliği 200px olarak ayarla */
+    height: 231px; /* Genişlik oranına göre yüksekliği otomatik ayarla */
+}
+.img-container {
+    margin-top: 600px; /* İstediğiniz boşluğu ayarlayın */
+}
+.Multi-city
+{
+position: relative;
+margin-left: -30px;
+display: inline-flex;
+gap: 10px;
+margin-top: 30px;
+scale: 104%;
+}
+
+#sp1{
+    line-height: 1.2;
+    font-family:  "Quicksand", sans-serif;
+    font-size: 30px;
+    margin-left: -40px;
+    color: #212529;
+    
+}
+
+.img-container span{
+    color: #e2001b;
+}
+
+.overlay {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color:#ffffff;
+    padding: 10px;
+    
+}
+
+.Lisbon .overlay{
+    display: block;
+    margin-top: -170px;
+    margin-left: 10px;
+}
+.Louis .overlay{
+    display: block;
+    margin-top: -220px;
+    margin-left: 10px;
+
+}
+.Sarajevo .overlay {
+    display: block;
+    margin-top: -170px;
+    margin-left: 10px;
+    
+}
+
+#head1, #head2, #head3,#head4{
+    font-size: 26px;
+    font-family: sans-serif;
+
+}
+
+#second1,#second2,#second3{
+    font-size: 16px;
+    font-family: sans-serif;
+
+}
+
+#third1,#third2,#third3{
+    font-size: 12px;
+    font-family: sans-serif;
+}
+
+.book-now-button {
+    background-color: #e81932;
+    border: none;
+    color: #fff;
+    border-bottom: none;
+    opacity: 1;
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-weight: 700;
+    height: 36px;
+    width: 99px;
+}
+
+.special-deals {
+    position: relative;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+}
+
+.special-deals p {
+    font-size: 30px;
+    color: #212529;
+    font-size: 30px;
+    font-family: MuseoSans-100;
+    margin-bottom: 5px;
+    margin-top: 20px;
+    letter-spacing: -1.5px;
+}
+
+#red-text {
+    color: #e81932;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: sans-serif;
+    letter-spacing: -1.5px;
+}
+
+.additional-images {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+
+.additional-images img {
+    width: 270px;
+    aspect-ratio: 270/150;
+    height: 150px;
+}
+
+.center-line {
+    content: "";
+    display: block;
+    width: 1495px;
+    height: 0.5px;
+    background-color: #dddddd;
+    margin-top: -375px;
+    margin-bottom: 10px;
+    margin-left: -245px;
+}
+
+
+
+
+.extra-image {
+    position: relative;
+    padding:  10px 20px;
+  
+}
+
+
+#Header1{
+    text-align: center;
+    margin-left: -1px;
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    height: 45px;
+    overflow: hidden;
+    color: #212529;
+    line-height: 1.2;
+    font-family: MuseoSans-500;
+    font-weight: 700;
+    
+    
+}
+
+#line1{
+    color: #212529;
+    font-size: 15px;
+    height: 60px;
+    margin-bottom: 1rem;
+    margin-top: 10px;
+    font-family: MuseoSans-300;
+    line-height: 1.2;
+    text-align:center;
+    margin-right: 20px;
+
+}
+
+#end1{
+    color: #e81932;
+    font-size: 15px;
+    font-weight: 1000;
+    text-align: center;
+    margin-right: 30px;
+    font-family: MuseoSans-300;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+
+
+
+.award-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 470px;
+    
+    
+}
+
+.award {
+    text-align: center;
+    width: 90px;
+    height: 15px;
+    font-size: 8px;
+    margin-left: -200px;
+    margin-right: 300px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #212529;
+}
+
+.award img {
+    width: 80px;
+    height: 80px;
+    margin-left: 90px;
+    padding: 0 90px 0;
+    cursor: pointer;
+    
+    
+}
+
+
+.award-text{
+    margin-left: 262px;
+    margin-top: -60px;
+    line-height: 1.2;
+    white-space: nowrap;
+
+}
+
+.center-line2 {
+    content: "";
+    display: block;
+    width: 1495px;
+    height: 0.5px;
+    background-color: #dddddd;
+    margin-top: -80px;
+    margin-bottom: 10px;
+    margin-left: -245px;
+}
+
+.center-line3 {
+    content: "";
+    display: block;
+    width: 1495px;
+    height: 0.5px;
+    background-color: #dddddd;
+    margin-top: -100px;
+    margin-bottom: 10px;
+    margin-left: -245px;
+}
+
+.sponsor {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 160px; /* İstediğiniz boşluğa göre ayarlayın */
+    cursor: pointer;
+}
+
+.sponsor img {
+    width: 200px; /* Resimlerin genişliği */
+    height: 80px; /* Yüksekliğin otomatik ayarlanması */
+}
+
+.head-above {
+    width: 1553.2px;
+    height: 60px;
+    background-color: #232b38;
+    border-top: 1px solid #e6e6e6;
+    position: fixed;
+    bottom: -2100px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    z-index: 1;
+  
+}
+
+.header2 img {
+    width: 300px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.additional-header {
+    width: 1553px;
+    height: 70px;
+    background-color: #181c23;
+    display: flex;
+    margin-top: 190px;
+    margin-left: -302px;
+    justify-content: center; /* Butonları yatayda ortala */
+    align-items: center; /* Butonları dikeyde ortala */
+    
+}
+
+.additional-header .additional-text {
+    display: flex;
+}
+
+.additional-header button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 11px;
+    padding:  25.3px 10px;
+    margin-left: -1px;
+    background-color: #181c23; /* Arka plan rengi */
+    border: 1px solid  transparent;
+    border-left: 1px solid  #232b38;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+
+.additional-header button span {
+    position: absolute; /* Mutlak konumlandırma kullan */
+    bottom: 0px; /* Metnin altında 5 piksel aşağıda yer alsın */
+    left: 50%; /* Yatayda merkeze hizala */
+    transform: translateX(-50%); /* Yatayda tam merkeze al */
+}
+
+
+
+.additional-header button span {
+    display: block; /* Ok işaretini blok element olarak ayarla */
+    margin-top: 5px; /* Metinden biraz aşağıda yer alsın */
+}
+
+.additional1-header {
+    width: 1553px;
+    height: 138px;
+    background-color: #181c23;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+    border-top: 1px solid #e6e6e6;
+    margin-top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+   
+    
+}
+
+.additional1-header ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; 
+}
+
+.additional1-header ul li {
+    margin-bottom: 0 ; /* Liste öğeleri arasında boşluk bırak */
+    display: inline-block;
+    right: 50%;
+    transform: translateX(270px);
+    margin-top: -20px;
+   
+
+}
+
+.additional1-header ul li:last-child {
+    margin-right: 0; /* Son liste öğesinde sağ taraftaki boşluğu kaldır */
+}
+
+.additional1-header ul li a {
+    text-decoration:none;
+    color: #c3cbd7; /* Metin rengi */
+    padding: 8px 16px;
+    font-size: 10px;
+    
+}
+
+.additional1-header ul li a:hover {
+    text-decoration: underline dotted; /* Fare üzerine gelindiğinde altını çiz */
+}
+
+
+
+.bottom-text {
+text-align: center; 
+right: 50%;
+transform: translateX(-510px); 
+margin-top: 50px; 
+color: #c3cbd7;
+font-size: 10px;
+
+
+}
